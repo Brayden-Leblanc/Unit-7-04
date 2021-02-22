@@ -9,9 +9,9 @@ function age () {
   day = document.getElementById('input2').value
 
   // Determines what to say based on the day, and the age entered
-  if ((day == 'Monday' || day == 'Friday' || day == 'monday' || day == 'friday') || (userInput > 5 && userInput < 21)) {
-  document.getElementById('answer').innerHTML = 'You are eligible for a discount!'
-} else {
-  document.getElementById('answer').innerHTML = 'You must pay regular price. Sorry!'
-}
+  if ((day === 'Monday' || day === 'Friday' || day === 'monday' || day === 'friday') || (userInput > 5 && userInput < 21)) {
+    document.getElementById('answer').innerHTML = 'You are eligible for a discount!'
+  } else {
+    document.getElementById('answer').innerHTML = 'You must pay regular price. Sorry!'
+  }
 }
